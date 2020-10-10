@@ -3,7 +3,7 @@ all: deploy
 
 .PHONY: deploy
 deploy:
-	kubectl create -f spec.yaml
+	kubectl create --validate=false -f spec.yaml
 
 .PHONY: delete
 delete:
